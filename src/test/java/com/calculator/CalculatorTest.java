@@ -106,11 +106,11 @@ public class CalculatorTest {
     @Test
     @DisplayName("Square root of a perfect square")
     void testSqrt() {
-        assertEquals(4.0, calculator.sqrt(16.0), "sqrt(16) should equal 4");
+        assertEquals(5.0, calculator.sqrt(25.0), "sqrt(25) should equal 5");
     }
 
     @Test
-    @DisplayName("Square root of negative throws ArithmeticException")
+    @DisplayName("Square root of Negative throws ArithmeticException")
     void testSqrtNegativeThrows() {
         assertThrows(ArithmeticException.class, () -> calculator.sqrt(-1.0));
     }
