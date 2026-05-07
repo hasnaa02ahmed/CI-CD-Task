@@ -1,9 +1,10 @@
 package com.calculator;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
 
 @DisplayName("Calculator Unit Tests")
@@ -16,7 +17,7 @@ public class CalculatorTest {
         calculator = new Calculator();
     }
 
-    // ─── Addition ───────────────────────────────────────────────────────────
+    // Addition
 
     @Test
     @DisplayName("Add two positive numbers")
@@ -36,7 +37,7 @@ public class CalculatorTest {
         assertEquals(-9.0, calculator.add(-4.0, -5.0), "-4 + (-5) should equal -9");
     }
 
-    // ─── Subtraction ────────────────────────────────────────────────────────
+    // Subtraction 
 
     @Test
     @DisplayName("Subtract smaller from larger")
@@ -50,7 +51,7 @@ public class CalculatorTest {
         assertEquals(-3.0, calculator.subtract(2.0, 5.0), "2 - 5 should equal -3");
     }
 
-    // ─── Multiplication ─────────────────────────────────────────────────────
+    // Multiplication 
 
     @Test
     @DisplayName("Multiply two positive numbers")
@@ -70,7 +71,7 @@ public class CalculatorTest {
         assertEquals(6.0, calculator.multiply(-2.0, -3.0), "-2 * -3 should equal 6");
     }
 
-    // ─── Division ───────────────────────────────────────────────────────────
+    // Division 
 
     @Test
     @DisplayName("Divide two numbers evenly")
@@ -86,7 +87,7 @@ public class CalculatorTest {
         assertEquals("Division by zero is not allowed.", ex.getMessage());
     }
 
-    // ─── Absolute Value ─────────────────────────────────────────────────────
+    // Absolute Value 
 
     @Test
     @DisplayName("Absolute value of a negative number")
@@ -100,7 +101,7 @@ public class CalculatorTest {
         assertEquals(7.0, calculator.abs(7.0), "abs(7) should equal 7");
     }
 
-    // ─── Square Root ────────────────────────────────────────────────────────
+    // Square Root 
 
     @Test
     @DisplayName("Square root of a perfect square")

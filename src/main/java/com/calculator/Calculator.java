@@ -6,26 +6,23 @@ package com.calculator;
  */
 public class Calculator {
 
-    /**
-     * Adds two numbers.
-     */
+    // Adds two numbers.
     public double add(double a, double b) {
         return a + b;
     }
 
-    /**
-     * Subtracts b from a.
-     */
+
+    // Subtracts b from a.     
     public double subtract(double a, double b) {
         return a - b;
     }
 
-    /**
-     * Multiplies two numbers.
-     */
+    
+    // Multiplies two numbers.     
     public double multiply(double a, double b) {
         return a * b;
     }
+
 
     /**
      * Divides a by b.
@@ -38,12 +35,12 @@ public class Calculator {
         return a / b;
     }
 
-    /**
-     * Returns the absolute value of a number.
-     */
+
+     // Returns the absolute value of a number.
     public double abs(double a) {
         return Math.abs(a);
     }
+
 
     /**
      * Returns the square root of a number.
