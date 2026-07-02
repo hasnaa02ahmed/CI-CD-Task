@@ -26,11 +26,11 @@ public class Calculator {
 
     /**
      * Divides a by b.
-     * @throws ArithmeticException if b is zero.
+     * @throws IllegalArgumentException if b is zero.
      */
     public double divide(double a, double b) {
         if (b == 0) {// an exception error
-            throw new ArithmeticException("Division by zero is not allowed.");
+            throw new IllegalArgumentException("Division by zero is not allowed.");
         }
         return a / b;
     }
