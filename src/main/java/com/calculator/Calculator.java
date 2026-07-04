@@ -48,7 +48,7 @@ public class Calculator {
      */
     public double sqrt(double a) {
         if (a < 0) {
-            throw new ArithmeticException("Cannot compute square root of a negative number.");
+            throw new IllegalArgumentException("Cannot compute square root of a negative number.");
         }
         return Math.sqrt(a);
     }
